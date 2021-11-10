@@ -1,0 +1,61 @@
+{
+	"ABI version": 2,
+	"version": "2.2",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"owner1","type":"address"},
+				{"name":"owner2","type":"address"},
+				{"name":"limit","type":"uint128"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "deposit",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "withdraw",
+			"inputs": [
+				{"name":"newLimit","type":"uint128"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "checkOwner",
+			"inputs": [
+				{"name":"answerId","type":"uint32"}
+			],
+			"outputs": [
+				{"name":"value0","type":"bool"}
+			]
+		},
+		{
+			"name": "getBalance",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint128"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"Owners","type":"map(address,bool)"},
+		{"name":"Limit","type":"uint128"},
+		{"name":"Balance","type":"uint128"}
+	]
+}
